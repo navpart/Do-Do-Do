@@ -168,6 +168,10 @@ table 50023 "Parts By Model"
         {
             DecimalPlaces = 0 : 0;
         }
+        field(33; "Sales Amount"; Decimal)
+        {
+
+        }
 
     }
 
