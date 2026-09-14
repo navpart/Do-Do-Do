@@ -164,6 +164,10 @@ table 50023 "Parts By Model"
             // Editable = false;
             // FieldClass = FlowField;
         }
+        field(32; Margin; Decimal)
+        {
+            DecimalPlaces = 0 : 0;
+        }
 
     }
 
