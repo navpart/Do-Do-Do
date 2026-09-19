@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3330904190 - Field 1100638775 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Approved,On-hold,Rejected</source>
+          <target> ,Approved,On-hold,Rejected</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field Head of Department - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - Field 1472942976 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Approved,On-hold,Rejected</source>
+          <target> ,Approved,On-hold,Rejected</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field Head of Audit - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - Field 2058473752 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Approved,On-hold,Rejected</source>
+          <target> ,Approved,On-hold,Rejected</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field Managing Director - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - Field 802754095 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Approved,On-hold,Rejected</source>
+          <target> ,Approved,On-hold,Rejected</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field General Manager - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - Field 84178781 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Satisfactory,Not Satisfactory</source>
+          <target> ,Satisfactory,Not Satisfactory</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field Compliance check - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - Field 4254314232 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Form M,DHL</source>
+          <target> ,Form M,DHL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - Field Air Order Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1  requires your approval</source>
+          <target>%1  requires your approval</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dear  </source>
+          <target>Dear  </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The document No. %1 for Air Order Parts  requires approval.</source>
+          <target>The document No. %1 for Air Order Parts  requires approval.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor: </source>
+          <target>Vendor: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address: </source>
+          <target>Address: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount: </source>
+          <target>Amount: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Regards,</source>
+          <target>Regards,</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mail sent successfully.</source>
+          <target>Mail sent successfully.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 3921243024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The above Document No. %1  has been placed on hold.</source>
+          <target>The above Document No. %1  has been placed on hold.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text009</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Air Order  with Document No. %1 has been approved.</source>
+          <target>The Air Order  with Document No. %1 has been approved.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text010</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Air Order with document No. %1 has been rejected.</source>
+          <target>The Air Order with document No. %1 has been rejected.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This document requires a compliance check.</source>
+          <target>This document requires a compliance check.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text012</note>
+        </trans-unit>
+        <trans-unit id="Table 3330904190 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Compliance Check %1  is Satisfactory.</source>
+          <target>Compliance Check %1  is Satisfactory.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Header - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Table 2866296095 - Field 1340654506 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>,DEALERS,SERVICE DEPT.(TAKATA),SERVICE  DEPT.(SST),NLNG PHC,PLANTGERIA PHC,WHO ABUJA,WARRANTY,DOJO LEKKI,DOJO OREGUN</source>
+          <target>,DEALERS,SERVICE DEPT.(TAKATA),SERVICE  DEPT.(SST),NLNG PHC,PLANTGERIA PHC,WHO ABUJA,WARRANTY,DOJO LEKKI,DOJO OREGUN</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Order Line - Field Order Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2866296095 - Field 596789822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Incoming Document Entry No.</source>
+          <target>Incoming Document Entry No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Order Line - Field Incoming Document Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2866296095 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Charge(Item),Item</source>
+          <target> ,Charge(Item),Item</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Air Online Order Line - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 3927376545 - Control 3471137671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lines</source>
+          <target>Lines</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Air Online Order Card - Control Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3927376545 - Action 3193475388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Form M</source>
+          <target>Generate Form M</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Air Online Order Card - Action Generate Form M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3927376545 - Action 3215408236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Purch. Order</source>
+          <target>Create Purch. Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Air Online Order Card - Action Create Purch. Order - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

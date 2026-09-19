@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 560615588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activities</source>
+          <target>Activities</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Service Adviser Activities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 560615588 - Control 1236876198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Stoppage</source>
+          <target>Job Stoppage</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Service Adviser Activities - Control Job Stoppage. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 560615588 - Control 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PSFU-Open</source>
+          <target>PSFU-Open</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Service Adviser Activities - Control Open - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 560615588 - Control 2073834300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PSFU-List Today</source>
+          <target>PSFU-List Today</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Service Adviser Activities - Control PSFU-List Today - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 560615588 - Control 3258664881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PSFU-Treated</source>
+          <target>PSFU-Treated</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Service Adviser Activities - Control Treated - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

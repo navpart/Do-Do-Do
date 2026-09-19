@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-GB" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 342592837 - Field 723677721 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Monthly,Bi-Weekly,Weekly</source>
+          <target>Monthly,Bi-Weekly,Weekly</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Time &amp; Attendance  Setup - Field Frequency Of Payment - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 422516652 - Field 3558769889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimention 1 code</source>
+          <target>Global Dimention 1 code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request2 - Field Global Dimension 1 code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 422516652 - Field 28094271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request2 - Field 1st Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 422516652 - Field 4095313026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request2 - Field 3rd Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 422516652 - Field 2046504333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request2 - Field 4th  Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2293400359 - Field 3558769889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimention 1 code</source>
+          <target>Global Dimention 1 code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Pool Car Register - Field Global Dimension 1 code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2293400359 - Field 28094271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Pool Car Register - Field 1st Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4079787331 - Field 3558769889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimention 1 code</source>
+          <target>Global Dimention 1 code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request3 - Field Global Dimension 1 code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4079787331 - Field 28094271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request3 - Field 1st Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4079787331 - Field 4095313026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;3rd Approval Satues&gt;</source>
+          <target>3rd Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request3 - Field 3rd Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4079787331 - Field 2046504333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Leave Request3 - Field 4th  Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 193402787 - Field 3558769889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimention 1 code</source>
+          <target>Global Dimention 1 code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TNL Work Order - Field Global Dimension 1 code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 193402787 - Field 28094271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TNL Work Order - Field 1st Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 441869951 - Field 3558769889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimention 1 code</source>
+          <target>Global Dimention 1 code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Motor Show Repair - Field Global Dimension 1 code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 441869951 - Field 28094271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Approval Satues</source>
+          <target>1st Approval Satues</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Motor Show Repair - Field 1st Approval Status - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

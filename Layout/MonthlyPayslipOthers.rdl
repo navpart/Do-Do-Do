@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>94fe589d-ea31-48bc-a2c5-d435cb64eefb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Staff No.:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>1.08127cm</Top>
+            <Left>2.21064cm</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox13">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!EmployeeNo.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>1.08127cm</Top>
+            <Left>4.75064cm</Left>
+            <Height>0.25in</Height>
+            <Width>2.02869in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Staff Name:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox7</rd:DefaultName>
+            <Top>1.71627cm</Top>
+            <Left>2.21064cm</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox14">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!FullName.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox14</rd:DefaultName>
+            <Top>1.71627cm</Top>
+            <Left>4.75064cm</Left>
+            <Height>0.25in</Height>
+            <Width>2.02869in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Designation:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox10</rd:DefaultName>
+            <Top>1.08127cm</Top>
+            <Left>10.07989cm</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="DesigName">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!DesigName.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DesigName</rd:DefaultName>
+            <Top>1.08127cm</Top>
+            <Left>12.61989cm</Left>
+            <Height>0.25in</Height>
+            <Width>2.02869in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox12">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Department</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox12</rd:DefaultName>
+            <Top>1.71627cm</Top>
+            <Left>10.07989cm</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="BusinessUnit">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!BusinessUnit.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>BusinessUnit</rd:DefaultName>
+            <Top>1.71627cm</Top>
+            <Left>12.61989cm</Left>
+            <Height>0.25in</Height>
+            <Width>2.02869in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix4">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.64408in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.79686in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.29167in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Earning</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.32292in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Payslip_Text">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Payslip_Text.Value</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Payslip_Text</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount_PayrollPayslipLines2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Amount_PayrollPayslipLines.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Amount_PayrollPayslipLines</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.29167in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Gross Pay</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount_PayrollPayslipLines4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Amount_PayrollPayslipLines.Value)</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Amount_PayrollPayslipLines</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details2" />
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!Payslip_Print_Column.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue>Total Earning</FilterValue>
+                </FilterValues>
+              </Filter>
+              <Filter>
+                <FilterExpression>=Fields!Amount_PayrollPayslipLines.Value</FilterExpression>
+                <Operator>NotEqual</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">0</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>1.39521in</Top>
+            <Left>1.15158in</Left>
+            <Height>0.90626in</Height>
+            <Width>2.44094in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Tablix Name="Tablix5">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.73264in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.86042in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.29167in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Deduction</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.31667in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Payslip_Text1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Payslip_Text.Value</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Payslip_Text1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount_PayrollPayslipLines1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Amount_PayrollPayslipLines.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Amount_PayrollPayslipLines1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.29167in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total Dedections</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount_PayrollPayslipLines3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Amount_PayrollPayslipLines.Value)</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Amount_PayrollPayslipLines1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details3" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!Payslip_Print_Column.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue>Negative</FilterValue>
+                </FilterValues>
+              </Filter>
+              <Filter>
+                <FilterExpression>=Fields!Amount_PayrollPayslipLines.Value</FilterExpression>
+                <Operator>NotEqual</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">0</FilterValue>
+                </FilterValues>
+              </Filter>
+              <Filter>
+                <FilterExpression>=Fields!ED_Type.Value</FilterExpression>
+                <Operator>NotEqual</Operator>
+                <FilterValues>
+                  <FilterValue>Pension Employer</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>1.39521in</Top>
+            <Left>3.95365in</Left>
+            <Height>0.90001in</Height>
+            <Width>2.59306in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Tablix Name="Tablix6">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>0.79687in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.90903in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.3625in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Net Pay</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount_PayrollPayslipLines5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Amount_PayrollPayslipLines.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Amount_PayrollPayslipLines1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details4" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!Payslip_Print_Column.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue>Net Earning</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>2.61465in</Top>
+            <Left>2.97274in</Left>
+            <Height>0.3625in</Height>
+            <Width>1.7059in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>3.29041in</Height>
+        <Style />
+      </Body>
+      <Width>7.10132in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1.5in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox7">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>TOYOTA NIGERIA LIMITED</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox6</rd:DefaultName>
+              <Top>2.27073cm</Top>
+              <Left>4.75064cm</Left>
+              <Height>0.6cm</Height>
+              <Width>9.69254cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!PayAdviceTitle.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox7</rd:DefaultName>
+              <Top>2.87073cm</Top>
+              <Left>4.75064cm</Left>
+              <Height>0.6cm</Height>
+              <Width>9.69255cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="Image1">
+              <Source>Embedded</Source>
+              <Value>ToyotaLogo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.38069in</Top>
+              <Left>0.70366in</Left>
+              <Height>1.07764in</Height>
+              <Width>1.16667in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="ToyotaLogo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="PayrollPeriod">
+          <DataField>PayrollPeriod</DataField>
+        </Field>
+        <Field Name="EmployeeNo">
+          <DataField>EmployeeNo</DataField>
+        </Field>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
+        </Field>
+        <Field Name="PayAdviceTitle">
+          <DataField>PayAdviceTitle</DataField>
+        </Field>
+        <Field Name="DesigName">
+          <DataField>DesigName</DataField>
+        </Field>
+        <Field Name="BusinessUnit">
+          <DataField>BusinessUnit</DataField>
+        </Field>
+        <Field Name="EDCode_PayrollPayslipLines">
+          <DataField>EDCode_PayrollPayslipLines</DataField>
+        </Field>
+        <Field Name="Payslip_Text">
+          <DataField>Payslip_Text</DataField>
+        </Field>
+        <Field Name="Amount_PayrollPayslipLines">
+          <DataField>Amount_PayrollPayslipLines</DataField>
+        </Field>
+        <Field Name="Amount_PayrollPayslipLinesFormat">
+          <DataField>Amount_PayrollPayslipLinesFormat</DataField>
+        </Field>
+        <Field Name="Payslip_Print_Column">
+          <DataField>Payslip_Print_Column</DataField>
+        </Field>
+        <Field Name="ED_Type">
+          <DataField>ED_Type</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
