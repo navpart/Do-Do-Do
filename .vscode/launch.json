@@ -1,26 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
->>>>>>> source/main
+//>>>>>>> source/main
         {
             "name": "Microsoft cloud sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-<<<<<<< HEAD
-            "environmentName": "sandbox1",
-=======
+//<<<<<<< HEAD
+//            "environmentName": "sandbox1",
+//======
             "environmentName": "Sandbox",
->>>>>>> source/main
+//>>>>>>> source/main
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-<<<<<<< HEAD
+//<<<<<<< HEAD
             "enableSqlInformationDebugger": true
         },
         {
@@ -34,9 +34,9 @@
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
-=======
             "enableSqlInformationDebugger": true,
+//=======
+//            "enableSqlInformationDebugger": true,
             "server": "https://businesscentral.dynamics.com/",
             "tenant": "cd191dbb-44ca-46e1-bae6-af115003d55f",
             "schemaUpdateMode": "ForceSync"
@@ -59,7 +59,7 @@
             "breakOnNext": "WebClient",
             "executionContext": "DebugAndProfile",
             "tenant": "cd191dbb-44ca-46e1-bae6-af115003d55f"
->>>>>>> source/main
+//>>>>>>> source/main
         }
     ]
 }
