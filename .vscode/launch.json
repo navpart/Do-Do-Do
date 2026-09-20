@@ -13,7 +13,7 @@
 //<<<<<<< HEAD
 //            "environmentName": "sandbox1",
 //======
-            "environmentName": "Sandbox2",
+            "environmentName": "Sandbox1",
 //>>>>>>> source/main
             "startupObjectId": 22,
             "startupObjectType": "Page",
@@ -28,7 +28,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandbox2",
+            "environmentName": "sandbox1",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "All",
@@ -46,7 +46,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "Sandbox2",
+            "environmentName": "Sandbox1",
             "tenant": "cd191dbb-44ca-46e1-bae6-af115003d55f"
         },
         {
@@ -54,7 +54,7 @@
             "request": "snapshotInitialize",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "Sandbox2",
+            "environmentName": "Sandbox1",
             "sessionId": 289136,
             "breakOnNext": "WebClient",
             "executionContext": "DebugAndProfile",

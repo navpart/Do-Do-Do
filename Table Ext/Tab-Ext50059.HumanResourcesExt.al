@@ -103,6 +103,10 @@ tableextension 50059 "Human Resources Ext" extends "Human Resources Setup"
         field(50026; "Work Order No."; Code[10])
         {
         }
+        field(50027; "Travel Request No."; Code[10])
+        {
+            TableRelation = "No. Series";
+        }
 
     }
 }

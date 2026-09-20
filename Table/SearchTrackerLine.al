@@ -14,6 +14,7 @@ table 50155 "Search Tracker Line"
         field(3; "Part No"; Code[20])
         {
             TableRelation = Item."No.";
+            validateTableRelation = false;
 
             /*  trigger OnLookup()
              begin
@@ -234,7 +235,15 @@ table 50155 "Search Tracker Line"
         }
         field(56; "Request by"; Code[20])
         {
-            
+
+        }
+        Field(57; "Job No."; Code[50])
+        {
+
+        }
+        field(58; "VIN No."; code[50])
+        {
+
         }
 
     }

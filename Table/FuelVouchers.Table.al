@@ -15,6 +15,7 @@ table 50053 "Fuel Vouchers."
                     if NoSeriesMgt.AreRelated("No. Series", xRec."No. Series") then
                         "No. Series" := xRec."No. Series";
                     "Voucher No." := NoSeriesMgt.GetNextNo("No. Series");
+
                 END;
 
                 Requisition := TRUE;
@@ -42,34 +43,68 @@ table 50053 "Fuel Vouchers."
             TableRelation = "Fixed Asset";
 
             trigger OnValidate()
+            var
+                Totalissued: Decimal;
             begin
                 IF FA.GET("Asset Code") THEN BEGIN
                     "Asset Name" := FA.Description;
                     "Shortcut Dimension 1 Code" := FA."Global Dimension 1 Code";
                     "Shortcut Dimension 2 Code" := FA."Global Dimension 2 Code";
                     "Registration No." := FA."Registration No.";
+                    //"Allocated Qty" := FA."Allocated Qty";
+
                 END ELSE BEGIN
                     "Staff Name" := '';
                     "Shortcut Dimension 1 Code" := '';
                     "Shortcut Dimension 2 Code" := '';
                 END;
+
+                begin
+                    // Calculate total for last 7 days
+                    Totalissued := SumFuelVoucherQtyLastSevenDays("Registration No.");
+
+                    // Store result in the new field
+                    "Total issued" := Totalissued;
+                end;
             end;
         }
         field(6; "Transaction Date"; Date)
         {
+            trigger OnValidate()
+
+            begin
+
+                if "Transaction Date" <> Today then
+                    Error('Transaction Date must be today (%1).', Today);
+
+            end;
         }
+
+
         field(7; "Qty Requested"; Decimal)
         {
+            trigger OnValidate()
+            begin
+                // Check employee fuel eligibility
+                if ("total issued" + "Qty Requested") > "Allocated Qty" then
+                    Error(
+                        'The employee is not eligible for additional fuel. Total issued fuel (%1) plus requested quantity (%2) exceeds the allocated quantity (%3).',
+                        "Total issued",
+                        "Qty Requested",
+                        "Allocated Qty");
+            end;
+
         }
         field(8; "Qty Approved"; Decimal)
         {
         }
         field(9; "Qty Issued"; Decimal)
         {
+
         }
         field(10; "Issued By"; Code[20])
         {
-            TableRelation = Employee;
+
         }
         field(11; "Received By"; Code[20])
         {
@@ -103,7 +138,11 @@ table 50053 "Fuel Vouchers."
         }
         field(18; Issue; Boolean)
         {
-
+            trigger OnValidate()
+            begin
+                UserSetup.GET(USERID);
+                "Issued By" := UserSetup.Name;
+            end;
         }
         field(19; "Staff Name"; Text[50])
         {
@@ -161,12 +200,51 @@ table 50053 "Fuel Vouchers."
         }
         field(28; "Registration No."; Code[10])
         {
+
         }
         field(29; "Responsible Employee No."; Code[10])
         {
+
+            TableRelation = Employee."No.";
+
+            trigger OnValidate()
+            var
+                EmployeeRec: Record Employee;
+                Totalissued: Decimal;
+            begin
+                if EmployeeRec.Get("Responsible Employee No.") then begin
+                    "Responsible Employee Name" := EmployeeRec.FullName();
+                    "Shortcut Dimension 1 Code" := EmployeeRec."Global Dimension 1 Code";
+                    "Shortcut Dimension 2 Code" := EmployeeRec."Global Dimension 2 Code";
+                    "Registration No." := EmployeeRec."Registration No.";
+                    "Allocated Qty" := EmployeeRec."Allocated Qty"
+                end
+                else begin
+                    "Responsible Employee Name" := '';
+                    "Shortcut Dimension 1 Code" := '';
+                    "Shortcut Dimension 2 Code" := '';
+                    "Registration No." := '';
+                    "Allocated Qty" := 0;
+                end;
+                begin
+                    // Calculate total for last 7 days
+                    Totalissued := SumFuelVoucherQtyLastSevenDays("Registration No.");
+
+                    // Store result in the new field
+                    "Total issued" := Totalissued;
+
+                end;
+            end;
+
+
+
+
         }
+
+
         field(30; "Responsible Employee Name"; Text[70])
         {
+            Editable = false;
         }
         field(31; "Fuel Type"; Option)
         {
@@ -185,9 +263,9 @@ table 50053 "Fuel Vouchers."
                 UserSetup.GET(USERID);
                 "Sent By" := UserSetup.Name;
                 "Send By UserID" := UserSetup."User ID";
-
-                IF UserSetup2.GET("Select HOD") THEN BEGIN
-                    ToName := UserSetup2."E-Mail";
+                IF UserSetup2.GET("Send By UserID") THEN BEGIN
+                    ToName := 'akintoye@toyotanigeria.com';
+                    CCName := UserSetup2."E-Mail";
 
                     EmailMessage.Create(ToName, Subject, Body, true);
                     EmailMessage.AddRecipient(Enum::"Email Recipient Type"::Cc, CCName);
@@ -281,6 +359,14 @@ table 50053 "Fuel Vouchers."
         field(44; Requisition; Boolean)
         {
         }
+        field(45; "total issued"; Decimal)
+        {
+            DecimalPlaces = 0 : 2;
+        }
+        field(46; "Allocated Qty"; Decimal)
+        {
+            DecimalPlaces = 0 : 2;
+        }
     }
 
     keys
@@ -304,6 +390,7 @@ table 50053 "Fuel Vouchers."
             if NoSeriesMgt.AreRelated("No. Series", xRec."No. Series") then
                 "No. Series" := xRec."No. Series";
             "Voucher No." := NoSeriesMgt.GetNextNo("No. Series");
+            "Transaction Date" := WORKDATE;
         END;
     end;
 
@@ -337,6 +424,7 @@ table 50053 "Fuel Vouchers."
         UserSetup2: Record "User Setup";
         Email: Codeunit Email;
         EmailMessage: Codeunit "Email Message";
+        Emp: Record Employee;
 
     procedure AssistEdit(OldFuelVou: Record "Fuel Vouchers."): Boolean
     begin
@@ -369,6 +457,7 @@ table 50053 "Fuel Vouchers."
         ItemJnlLine."Posting Date" := "Transaction Date";
         ItemJnlLine."Entry Type" := ItemJnlLine."Entry Type"::"Negative Adjmt.";
         ItemJnlLine."Document No." := "Voucher No.";
+        itemJnlLine."Registration No." := "Registration No.";
         ItemJnlLine.VALIDATE("Item No.", "Item No.");
         ItemJnlLine.Description := 'Fuel for New Vehicle';
         ItemJnlLine.VALIDATE(ItemJnlLine."Shortcut Dimension 1 Code", "Shortcut Dimension 1 Code");
@@ -536,6 +625,31 @@ table 50053 "Fuel Vouchers."
 
         Issue := TRUE;
         MODIFY;
+    end;
+
+    procedure SumFuelVoucherQtyLastSevenDays(RegNo: Code[20]): Decimal
+    var
+        FuelVoucher: Record "Fuel Vouchers.";
+        TotalIssued: Decimal;
+        WeekStartDate: Date;
+    begin
+        TotalIssued := 0;
+
+        // Get Monday of the current week
+        WeekStartDate := Today - (Date2DWY(Today, 1) - 1);
+
+        FuelVoucher.SetRange("Registration No.", RegNo);
+        FuelVoucher.SetRange("Transaction Date", WeekStartDate, Today);
+        FuelVoucher.SetRange(Issue, true);
+
+        if FuelVoucher.FindSet() then
+            repeat
+                // Count only Monday-Friday
+                if Date2DWY(FuelVoucher."Transaction Date", 1) in [1, 2, 3, 4, 5] then
+                    TotalIssued += FuelVoucher."Qty Issued";
+            until FuelVoucher.Next() = 0;
+
+        exit(TotalIssued);
     end;
 }
 

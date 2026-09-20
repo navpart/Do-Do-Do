@@ -571,19 +571,26 @@ tableextension 50051 "Employee Ext" extends "Employee"
         {
             DecimalPlaces = 0 : 0;
         }
+        field(60061; "Registration No."; Code[20])
+        {
+        }
+        field(60062; "Allocated Qty"; decimal)
+        {
+        }
+
     }
 
     keys
     {
-        Key(ExtKey1; Bank)
+        Key(EMPExtKey1; Bank)
         {
 
         }
-        key(ExtKey2; "Global Dimension 1 Code", "Global Dimension 2 Code")
+        key(EMPExtKey2; "Global Dimension 1 Code", "Global Dimension 2 Code")
         {
 
         }
-        key(ExtKey3; "Posting Group")
+        key(EMPExtKey3; "Posting Group")
         {
 
         }
